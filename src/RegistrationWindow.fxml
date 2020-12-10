@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegistrationWindow">
+   <children>
+      <ComboBox fx:id="userType" layoutX="187.0" layoutY="210.0" prefHeight="31.0" prefWidth="227.0" />
+      <Label layoutX="117.0" layoutY="215.0" prefHeight="21.0" prefWidth="70.0" text="User Type" />
+      <TextField fx:id="name" layoutX="187.0" layoutY="132.0" prefHeight="31.0" prefWidth="227.0" />
+      <Text layoutX="145.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Button layoutX="242.0" layoutY="276.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" text="Register" />
+      <TextField fx:id="reply" layoutX="187.0" layoutY="323.0" prefHeight="31.0" prefWidth="227.0" visible="false" />
+   </children>
+</AnchorPane>
