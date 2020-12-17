@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
+import java.security.SecureRandom;
+
 
 
 public class LandingWindow {
@@ -12,12 +14,13 @@ public class LandingWindow {
     AnchorPane anchorPane;
     @FXML
     Button signInButton, registerButton;
+
     public void signInButtonOnAction() throws Exception {
-        sceneChanger.sceneChange("FrontEnd/SignInWindow.fxml",anchorPane);
+        sceneChanger.sceneChange("SignInWindow.fxml",anchorPane);
 
     }
     public void registerButtonOnAction() throws Exception {
-        sceneChanger.sceneChange("FrontEnd/RegistrationWindow.fxml",anchorPane);
+        sceneChanger.sceneChange("RegistrationWindow.fxml",anchorPane);
 
     }
 }
