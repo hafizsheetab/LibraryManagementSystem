@@ -1,5 +1,6 @@
+package FrontEnd;
+
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
@@ -12,11 +13,11 @@ public class LandingWindow {
     @FXML
     Button signInButton, registerButton;
     public void signInButtonOnAction() throws Exception {
-        sceneChanger.sceneChange("SignInWindow.fxml",anchorPane);
+        sceneChanger.sceneChange("FrontEnd/SignInWindow.fxml",anchorPane);
 
     }
     public void registerButtonOnAction() throws Exception {
-        sceneChanger.sceneChange("RegistrationWindow.fxml",anchorPane);
+        sceneChanger.sceneChange("FrontEnd/RegistrationWindow.fxml",anchorPane);
 
     }
 }

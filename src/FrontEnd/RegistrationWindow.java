@@ -1,3 +1,5 @@
+package FrontEnd;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 
