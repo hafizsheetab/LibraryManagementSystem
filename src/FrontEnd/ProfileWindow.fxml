@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.ProfileWindow">
+   <children>
+      <TextField fx:id="toBeBorrowed" layoutX="30.0" layoutY="42.0" prefHeight="316.0" prefWidth="224.0" />
+      <TextField fx:id="borrowed" layoutX="325.0" layoutY="42.0" prefHeight="157.0" prefWidth="224.0" />
+      <Button fx:id="borrowABook" layoutX="89.0" layoutY="358.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="106.0" text="borrow" />
+      <Text layoutX="27.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books That Can Be Borrowed" />
+      <Text layoutX="336.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books That Are Borrowed" />
+      <Button fx:id="returnABook" layoutX="384.0" layoutY="199.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="119.0" text="return" />
+      <Button layoutX="368.0" layoutY="263.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="151.0" text="Get Information" />
+      <Button fx:id="returnABook1" layoutX="384.0" layoutY="358.0" mnemonicParsing="false" onAction="#logOutOnAction" prefHeight="27.0" prefWidth="119.0" text="Log Out" />
+   </children>
+</AnchorPane>

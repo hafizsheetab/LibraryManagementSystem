@@ -10,10 +10,10 @@
 <AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontEnd.SignInWindow">
    <children>
       <TextField fx:id="id" layoutX="145.0" layoutY="122.0" prefHeight="27.0" prefWidth="311.0" />
-      <TextField fx:id="password" layoutX="145.0" layoutY="219.0" prefHeight="27.0" prefWidth="311.0" />
       <Text layoutX="129.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id" />
-      <Text layoutX="80.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
-      <Button layoutX="268.0" layoutY="286.0" mnemonicParsing="false" text="Submit" />
+      <Text layoutX="69.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <Button fx:id="submit" layoutX="268.0" layoutY="286.0" mnemonicParsing="false" onAction="#submitButtonOnAction" text="Submit" />
       <TextField fx:id="reply" layoutX="146.0" layoutY="328.0" prefHeight="27.0" prefWidth="311.0" visible="false" />
+      <PasswordField fx:id="password" layoutX="144.0" layoutY="218.0" prefHeight="39.0" prefWidth="311.0" />
    </children>
 </AnchorPane>

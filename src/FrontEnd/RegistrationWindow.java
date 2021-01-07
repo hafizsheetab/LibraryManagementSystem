@@ -1,16 +1,17 @@
 package FrontEnd;
-import  APIs.PBE;
 
+import APIs.Database;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-
-import java.net.URL;
-import java.util.ResourceBundle;
+import javafx.scene.layout.AnchorPane;
 
 public class RegistrationWindow {
+    public SceneChanger sceneChanger = new SceneChanger();
+    @FXML
+    AnchorPane anchorPane;
     @FXML
     TextField reply, name;
     @FXML
@@ -28,12 +29,14 @@ public class RegistrationWindow {
         String password1 = password.getText();
         String userType1 = (String)userType.getValue();
         String reply1 = formValidator(name1, password1, userType1);
-//        password1 = PBE.encrypt(password1.toCharArray(),"MySecretToken");
         System.out.println(password1);
         System.out.println(reply1);
         if(!reply1.isEmpty()){
             reply.setText(reply1);
             return;
+        }
+        else{
+            sceneChanger.sceneChange("SignInWindow.fxml",anchorPane);
         }
 
     }
